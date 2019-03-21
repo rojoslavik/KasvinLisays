@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/kasvinNimi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <EditText
+        android:id="@+id/kasviLaji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="180dp" />
+
+    <Button
+        android:id="@+id/otaKuva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ota kuva"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="410dp" />
+
+    <Button
+        android:id="@+id/valmis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valmis"
+        tools:layout_editor_absoluteX="286dp"
+        tools:layout_editor_absoluteY="621dp" />
+
+    <Button
+        android:id="@+id/lajinLisays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lajin lisäys"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="180dp" />
+
+</android.support.constraint.ConstraintLayout>
