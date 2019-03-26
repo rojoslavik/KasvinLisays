@@ -10,44 +10,91 @@
         android:id="@+id/kasvinNimi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginRight="168dp"
+        android:layout_marginBottom="21dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="114dp" />
+        android:inputType="text"
+        android:text="nimi"
+        app:layout_constraintBottom_toTopOf="@+id/kasviLaji"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kasvinKuva" />
 
     <EditText
         android:id="@+id/kasviLaji"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="21dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="180dp" />
+        android:inputType="text"
+        android:text="Kasvin Laji"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kasvinNimi" />
 
     <Button
         android:id="@+id/otaKuva"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="278dp"
+        android:layout_marginRight="278dp"
+        android:layout_marginBottom="154dp"
         android:text="Ota kuva"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="410dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kasviLaji" />
 
     <Button
         android:id="@+id/valmis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="286dp"
+        android:layout_marginLeft="286dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginBottom="62dp"
         android:text="Valmis"
-        tools:layout_editor_absoluteX="286dp"
-        tools:layout_editor_absoluteY="621dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lajinLisays" />
 
     <Button
         android:id="@+id/lajinLisays"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:text="Lajin lisäys"
-        tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="180dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kasviLaji"
+        app:layout_constraintTop_toBottomOf="@+id/kasvinKuva" />
+
+    <ImageView
+        android:id="@+id/kasvinKuva"
+        android:layout_width="273dp"
+        android:layout_height="185dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/screen_background_dark_transparent" />
 
 </android.support.constraint.ConstraintLayout>
